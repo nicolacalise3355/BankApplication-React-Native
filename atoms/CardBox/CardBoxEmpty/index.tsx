@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, Text, ImageBackground } from 'react-native'
+import { View, ImageBackground } from 'react-native'
 import { CardBoxEmptyProp } from '../../../interfaces/AtomsInterfaces'
 import { CardBoxStyle } from '../style'
 

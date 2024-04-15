@@ -26,7 +26,6 @@ export const Homepage = () => {
 
   React.useEffect(() => {
     if(transactions && Array.isArray(transactions)) setTransactionsList((transactions as ITransaction[]).slice(0,3))
-    setShouldDisplayMessage(true)
   }, [transactions])
 
   const changeTransactionsView = () => {

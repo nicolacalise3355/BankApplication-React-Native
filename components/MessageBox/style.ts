@@ -34,7 +34,7 @@ export const MessageBoxStyle = StyleSheet.create({
         gap: 12,
         justifyContent: "center",
         alignItems: 'center',
-        padding: 16
+        padding: 24
     },
     modalTextContainer: {
         display: 'flex',

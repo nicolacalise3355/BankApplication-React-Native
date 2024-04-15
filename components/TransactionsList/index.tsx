@@ -1,15 +1,13 @@
 import React from 'react'
-import { View, ScrollView, Dimensions } from 'react-native'
+import { View, ScrollView } from 'react-native'
 import { TransactionBox } from '../../atoms'
 import { TransactionsListStyle } from './style'
 import { TransactionsListProps } from '../../interfaces/ComponentsInterfaces'
 
-const defaultHeight = 400;
-
-export const TransactionsList = ({ transactions, listHeight }: TransactionsListProps) => {
+export const TransactionsList = ({ transactions, listHeight = 400 }: TransactionsListProps) => {
   return (
     <View style={TransactionsListStyle.containerScroll}>
-      <View style={{ height: listHeight ?? defaultHeight }}>
+      <View style={{ height: listHeight }}>
         <ScrollView>
           <View style={TransactionsListStyle.container}>
             {
